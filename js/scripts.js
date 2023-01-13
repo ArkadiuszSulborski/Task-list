@@ -23,6 +23,11 @@
             render();
       }
 
+      const taskDone = (index) => {
+            tasks[index].done = !tasks[index].done;
+            render();
+      };
+
       const render = () => {
             let htmlString = "";
 
@@ -33,6 +38,7 @@
                   >
                   <button class="js-delete">Usuń</button>
                   ${task.content}
+                  <button class="js-done">Zrobione</button>
                   </li>
                   `;
             };
@@ -44,6 +50,14 @@
             deleteButtons.forEach((deleteButton, index) => {
                   deleteButton.addEventListener("click", () => {
                        removeTask(index);
+                  });
+            })
+
+            const doneButtons = document.querySelectorAll(".js-done");
+
+            doneButtons.forEach((doneButton, index) => {
+                  doneButton.addEventListener("click", () => {
+                       taskDone(index);
                   });
             })
       };
