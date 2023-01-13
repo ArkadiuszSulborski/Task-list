@@ -1,0 +1,62 @@
+.main__text {
+    text-align: left;
+    border-bottom: 3px solid black;
+    padding: 40px;
+}
+
+.main__tittle {
+    border-bottom: 3px solid black;
+    margin-bottom: 40px;
+}
+
+.main__project {
+    border-bottom: 5px solid black;
+    padding: 40px;
+}
+
+.main__books {
+    border-bottom: 3px solid black;
+    padding: 40px;
+}
+
+.main__container {
+    overflow-x: auto;
+}
+
+.main__table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.main__tableCell {
+    border: 2px solid rgb(54, 16, 16);
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.main__tableCell:hover {
+    background-color: aqua;
+}
+
+.main__tableHeader {
+    background-color: bisque;
+    color: rgb(9, 36, 36);
+}
+
+.main__caption {
+    caption-side: bottom;
+    text-align: center;
+    margin-top: 15px;
+    margin: 15px;
+}
+
+.main__list {
+    list-style-type: none;
+    margin-bottom: 60px;
+}
+
+.main__button {
+    margin-top: 10px;
+    outline: 2px solid;
+}
