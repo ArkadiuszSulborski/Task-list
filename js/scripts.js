@@ -1,4 +1,8 @@
 {
+      const grettings = () => {
+            console.log("Hello Youcode");
+      };
+
       const tasks = [
       ];
 
@@ -37,18 +41,19 @@
                   });
             });
       };
-
       const render = () => {
             let htmlString = "";
 
             for (const task of tasks) {
                   htmlString += `
-                  <li
-                  ${task.done ? " style=\"text-decoration: line-through\"" : ""}
-                  >
-                  <button class="js-done">Zrobione</button>
-                  ${task.content}
-                  <button class="js-delete">Usuń</button>
+                  <li class="list">
+                        <button class="list__button list__button--done js-done">
+                        ${task.done ? "✔" : ""}
+                        </button>
+                        <span class="list__taskName${task.done ? " list__taskName--done" : ""}">
+                        ${task.content}
+                        </span>
+                        <button class="list__button js-delete">🗑</button>
                   </li>
                   `;
             };
@@ -73,6 +78,7 @@
 
       const init = () => {
             render();
+            grettings();
 
             const form = document.querySelector(".js-form");
 
