@@ -3,7 +3,7 @@
 This is small application that can make simple task list.
 
 
-[Homepage](https://arkadiuszsulborski.github.io/homepage/)
+[Task List app](https://arkadiuszsulborski.github.io/Task-list/)
 ##  Technologies and conventions used in the project:
 
  - HTML
