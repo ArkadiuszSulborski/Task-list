@@ -85,9 +85,10 @@
             if (htmlString != "") {
                   subtitleString +=
                         `<h2 class=" main__subtitle--lower js-subtitle">Lista zadań</h2>
-                         <button class="main__button js-hideDoneTasks">${hideDoneTask ? "Pokaż" : "Ukryj"} zakończone</button>
+                         <button class="main__button js-hideDoneTasks">
+                              ${hideDoneTask ? "Pokaż" : "Ukryj"} zakończone</button>
                          <button class="main__button js-allTaskDone"
-                         ${tasks.every(({ done }) => done) ? "disabled" : ""}>Ukończ wszystkie</button>`
+                              ${tasks.every(({ done }) => done) ? "disabled" : ""}>Ukończ wszystkie</button>`
             }
             else if (htmlString === "") {
                   subtitleString +=
@@ -100,9 +101,13 @@
             let htmlString = "";
             for (const task of tasks) {
                   htmlString += `
-                    <li class="list__itemContainer ${task.done && hideDoneTask ? "list__itemContainer--hidden" : ""}">
-                        <button class="js-done list__button">${task.done ? "&#10004" : ""}</button>
-                        <span class="list__item${task.done ? " list__item--done" : ""}">${task.content}</span>    
+                    <li class="list__itemContainer 
+                              ${task.done && hideDoneTask ? "list__itemContainer--hidden" : ""}">
+                        <button class="js-done list__button">
+                              ${task.done ? "&#10004" : ""}</button>
+                        <span class="list__item
+                              ${task.done ? " list__item--done" : ""}">
+                              ${task.content}</span>    
                         <button class="js-remove list__button list__button--red">&#128465</button>               
                     </li>
                 `;
