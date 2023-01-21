@@ -1,7 +1,6 @@
 .body {
-    background-color: rgb(219, 219, 219);
     max-width: 1000px;
-    margin: 0 auto;
-    word-break: break-word;
-    padding: 20px;
-}
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(233, 233, 233);
+  }
