@@ -36,11 +36,13 @@
     text-align: center;
     border: none;
     max-height: 40px;
+    transition: 1s;
 
 }
 
 .main__button:hover {
     color: hsl(180, 100%, 35%);
+    transform: scale(1.4);
 }
 
 .main__button:active {
