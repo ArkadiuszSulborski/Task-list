@@ -12,12 +12,12 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="js/scripts.js"> </script>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/body.css" rel="stylesheet">
-    <link href="css/section.css" rel="stylesheet">
-    <link href="css/task.css" rel="stylesheet">
-    <link href="css/list.css" rel="stylesheet">
-    <link href="css/form.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/_style.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/header.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -25,20 +25,27 @@
 </head>
 
 <body class="body">
-    <header>
-        <h1>Lista zadań</h1>
+    <header class="header">
+        <h1>Lista zadań </h1>
     </header>
-    <section class="section">
-        <h2 class="section__header">Dodaj nowe zadanie</h2>
-        <form class="form js-form">
-            <input autofocus class="form__input js-newTask" name="task" placeholder="Co jest do zrobienia?">
-            <button class="form__addButton">Dodaj zadanie</button>
-        </form>
-    </section>
-    <section class="section section--under">
-        <h2 class="section__lowerHeader">Lista zadań</h2>
-        <ul class="task js-task"></ul>
-    </section>
+    <main class="main">
+        <h2 class="main__subtitle">Dodaj nowe zadanie </h2>
+        <div class="main__div">
+            <form class="js-form form">
+
+                <input autofocus class="form__input js-newTask" placeholder="Co jest do zrobienia?"><button
+                    class="form__button js-addNewTaskButton">Dodaj zadanie</button>
+
+            </form>
+        </div>
+        <h2 class="main__subtitle main__subtitle--grid js-subtitle"></h2>
+        <div class="main__div main__div--minHeight">
+            <ul class="list js-tasks">
+            </ul>
+        </div>
+
+    </main>
+
 </body>
 
 </html>
