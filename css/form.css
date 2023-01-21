@@ -14,13 +14,16 @@
     margin: 10px;
     transition: 1s;
 }
-.form__button:hover{
+
+.form__button:hover {
     background-color: hsl(180, 100%, 30%);
     transform: scale(1.4);
 }
-.form__button:active{
+
+.form__button:active {
     background-color: hsl(180, 100%, 35%);
 }
+
 .form__input {
     box-sizing: border-box;
     display: inline-block;

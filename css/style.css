@@ -3,6 +3,8 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: inherit;
 }

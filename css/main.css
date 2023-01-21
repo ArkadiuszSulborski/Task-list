@@ -12,10 +12,11 @@
     margin-bottom: 0px;
 }
 
-.main__subtitle--lower{
+.main__subtitle--lower {
     font: size 20px;
-    align-self:  flex-start;
+    align-self: flex-start;
 }
+
 .main__div {
     max-width: 100%;
     margin-top: 0px;
@@ -28,7 +29,8 @@
 .main__div--minHeight {
     min-height: 120px;
 }
-.main__button{
+
+.main__button {
     background-color: white;
     color: hsl(180, 100%, 25%);
     text-align: center;
@@ -37,30 +39,35 @@
 
 }
 
-.main__button:hover{
+.main__button:hover {
     color: hsl(180, 100%, 35%);
 }
-.main__button:active{
+
+.main__button:active {
     color: hsl(180, 100%, 45%);
     border: 2px solid black;
     margin: -2px;
 }
-.main__subtitle--grid{
+
+.main__subtitle--grid {
     display: grid;
-    grid-template-columns:  1fr auto auto;
+    grid-template-columns: 1fr auto auto;
     grid-gap: 20px;
-    align-items: center;      
+    align-items: center;
 }
-.main__button:disabled{
+
+.main__button:disabled {
     color: rgba(128, 128, 128, 0.39);
 }
-@media (max-width: 767px){
-    .main__button{
+
+@media (max-width: 767px) {
+    .main__button {
         width: 100%;
     }
-    .main__subtitle--grid{
+
+    .main__subtitle--grid {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap
     }
-};
+}
